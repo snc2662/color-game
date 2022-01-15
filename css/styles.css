@@ -1,0 +1,94 @@
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  background-color: steelblue;
+  margin: 0;
+  padding: 20px 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+#color-code {
+  display: block;
+  font-size: 200%;
+}
+
+#control-panel {
+  background-color: #fff;
+  text-align: center;
+  height: 1.9rem;
+}
+
+.selected {
+  background-color: steelblue;
+  color: #fff;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: inherit;
+  color: steelblue;
+  letter-spacing: 1px;
+  height: 100%;
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  color: #fff;
+  background-color: steelblue;
+}
+
+#game-status {
+  display: inline-block;
+  width: 20%;
+}
+
+#box-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.box {
+  width: 30%;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15%;
+  transition: background 0.5s;
+}
+
+/******************************** Media Queries *************************/
+@media (max-width: 921px) {
+  #color-code {
+    font-size: 170%;
+  }
+}
+
+@media (max-width: 768px) {
+  #color-code {
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  #game-status {
+    font-size: 0.8rem;
+  }
+  button {
+    font-size: 0.7rem;
+  }
+}
